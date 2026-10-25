@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #211A18 0%, #44332D 50%, #6D5045 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: #FAF6F0;
+    width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #E7D9CA;
+    padding-bottom: 10px;
+}
+
+.quiz-header h2 {
+    color: #382720;
+    font-size: 22px;
+}
+
+#timerBox {
+    background: #EFE0CC;
+    color: #795438;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#quizBox h3 {
+    color: #30241F;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.option-label {
+    display: block;
+    background: #F5EDE3;
+    border: 1px solid #DDC9B5;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: #44332B;
+}
+
+.option-label:hover {
+    background: #EAD9C6;
+    border-color: #AD8970;
+}
+
+.option-label input {
+    margin-right: 10px;
+    accent-color: #795438;
+}
+
+#nextBtn {
+    width: 100%;
+    background: linear-gradient(135deg, #765440, #493329);
+    color: #FFF9F1;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+#nextBtn:hover {
+    background: linear-gradient(135deg, #60422F, #30221C);
+}
+
+#nextBtn:disabled {
+    background: #C9B9A9;
+    cursor: not-allowed;
+}
+
+.result-box {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.result-box h2 {
+    color: #66816A;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.result-box p {
+    font-size: 18px;
+    color: #44332B;
+    margin: 8px 0;
+}
